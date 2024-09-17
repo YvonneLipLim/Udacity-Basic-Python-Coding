@@ -1,7 +1,7 @@
-# YLL_UD_Python_Basic
+# YLL-Udacity-Basic-Python
 Udacity Introduction To Python Programming
 
-<h3> A Beginner's Guide to Transact-SQL Syntax </h3>
+<h3>A Beginner's Guide to Basic Python</h3>
 Tired of flipping through countless cheat sheets? This comprehensive Basic Python Mindmap Cheat Sheet is designed to make it quick and easy to find the right SQL commands in 5 major categories depending on their functionality:
 <ul>
 <li>Basic</li>
