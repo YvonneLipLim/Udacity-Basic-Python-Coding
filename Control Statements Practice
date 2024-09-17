@@ -1,0 +1,17 @@
+#Q1. Calculate and compare the population densities of Rio de Janeiro and San Francisco. Given the following information:
+# Rio de Janeiro: Population: 12,367,360, Area: 1,204 square kilometers
+# San Francisco: Population: 884,373, Area: 46.87 square miles
+#  Is the population of San Francisco more dense than that of Rio de Janeiro? Print True if it is and False if not.
+
+sf_area_sq_km = 46.87 * 2.59 #Convert square miles into square kilometers
+sq_area = sf_area_sq_km
+rio_population, rio_area = 12367360, 1204
+sf_population, sf_area = 884373, sq_area
+rio_pop_density = rio_population/rio_area
+sf_pop_density = sf_population/sq_area
+if sf_pop_density > rio_pop_density: #Use if statement to find out San Francisco more dense than that of Rio de Janeiro
+  print(True)
+else:
+  print(False)
+
+False
