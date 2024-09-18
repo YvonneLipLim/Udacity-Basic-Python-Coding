@@ -1,7 +1,7 @@
 '''
 Q1. 
 Create an if-elif-else statement that determines a winner's prize based on their total points. The points are stored in the integer variable points. 
-In the conditional statement, assign result variable in a string message based on value of points. If they had won a prize, state "Congratulations! You won a [prize name]!", if not state "Oh dear, no prize this time.". 
+In the conditional statement, assign the result variable in a string message based on the value of points. If they had won a prize, state "Congratulations! You won a [prize name]!", if not state "Oh dear, no prize this time.". 
 1 - 50: No Prize
 51 - 150: Protein Bar
 151 - 180: Wafer Mint
@@ -23,8 +23,8 @@ Congratulations! You won a Protein Bar!
 
 
 '''
-Q2. Create a conditionals statements to inform user about how their guess compares to the answer. Inform the user if their guess is too high or too low. 
-Use looop to allow user to make multiple guesses until they guess the correct answer.
+Q2. Create a conditional statement to inform user about how their guess compares to the answer. Inform the user if their guess is too high or too low. 
+Use looop to allow users to make multiple guesses until they guess the correct answer.
 
 answer = 30 #provide answer
 guess = 51 #provide guess
