@@ -5,13 +5,16 @@ num_days = days_per_month[month - 1] #Substracts 1 from the value of the month v
 print(num_days)
 
 31
-
+-----------------------------------------------------------------------------------------------------------------
 
 # Q2. Given a list of total solar eclipse dates, select three earliest dates and three most recent dates using the slicing notation.
 eclipse_dates = ['3 November 2013', '20 March 2015', '21 August 2017', '2 July 2019', '14 December 2020', '4 December 2021', '20 April 2023', '8 April 2024', '12 August 2026', '2 August 2027', '22 July 2028', '25 November 2030']
 print(eclipse_dates [:3]) #Extract first 3 index starting from 0 and omit the 3rd index
 print(eclipse_dates [-3:]) #Extract last 3 index 
 
+['3 November 2013', '20 March 2015', '21 August 2017']
+['2 August 2027', '22 July 2028', '25 November 2030']
+-----------------------------------------------------------------------------------------------------------------
 
 #Q3. For the following expression in sentence1, 
 # Replace "." with "!"
@@ -31,7 +34,7 @@ print(sentence1)
 ['We', 'are', 'never', 'too', 'old', 'to', 'set', 'another', 'goal', 'or', 'to', 'dream', 'a', 'new', 'dream', '!'] 
 
 ['We', 'are', 'never', 'too', 'old', 'to', 'set', 'another', 'goal', 'or', 'to', 'have', 'many', 'big', 'dreams', '!']
-
+-----------------------------------------------------------------------------------------------------------------
 
 #Q4. Given three lists of integers: a, b, and c, determine the maximum and minimum number of elements among these lists.
 a = [4, 50, 95, 32, 65]
@@ -43,7 +46,7 @@ print("The minimum number would be: ",min([len(a), len(b), len(c)]))
 
 The maximum number would be:  9
 The minimum number would be:  3
-
+-----------------------------------------------------------------------------------------------------------------
 
 #Q5. Given a list of integers, calculate the number of duplicate elements present in the list. Then add 88 to the set. Lastly remove a random elements from b. Consider using sets to efficiently remove duplicates. 
 a = [24, 4, 4, 14, 41, 1, 20, 26, 34, 4, 26,]
@@ -55,6 +58,7 @@ print(b)
 
 There are 3 duplicates in the list.
 {34, 4, 41, 14, 20, 24, 26, 88}
+-----------------------------------------------------------------------------------------------------------------
 
 #Q6. Given the list below, define a dictionary name population for the below data
 # Key       |   Value    | Key      |   Value    | Key      |   Value
