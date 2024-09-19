@@ -3,7 +3,7 @@ Udacity Introduction To Python Programming
 <br><br>
 
 <h3>A Beginner's Guide to Basic Python</h3>
-<p>Tired of flipping through countless cheat sheets? This comprehensive Basic Python Mindmap Cheat Sheet is designed to make it quick and easy to find the right SQL commands in 5 major categories depending on their functionality:
+<p>Tired of flipping through countless cheat sheets? This comprehensive Basic Python Mindmap Cheat Sheet is designed to make it quick and easy to find the right Python functionsls in 5 major categories depending on their functionality:
 <ul>
 <li>Basic</li>
 <li>Operators</li>
