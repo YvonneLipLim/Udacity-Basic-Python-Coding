@@ -10,6 +10,7 @@ A Court of Thorns and Roses
 Camino Ghost
 Reckless The Powerless Trilogy
 Dog Man: The Scarlet Shedder
+'''
 
 #Counting using for loops:
 book_titles = ['The', 'Housemaid', 'Is', 'Watching', 'Eruption', 'Swan', 'Song', 'Dad', 'I', 'Want', 'To', 'Hear', 'Your', 'Story', 'The', 'Women', 'The', 'Housemaid', 'A', 'Court', 'of', 'Thorns', 'and', 'Roses', 'Camino', 'Ghost', 'Reckless', 'The', 'Powerless', 'Trilogy', 'Dog', 'Man:', 'The', 'Scarlet', 'Shedder']
@@ -23,9 +24,11 @@ for word in book_titles: #iterate over each book title in the book_titles list
 print(word_counter)
 
 {'The': 5, 'Housemaid': 2, 'Is': 1, 'Watching': 1, 'Eruption': 1, 'Swan': 1, 'Song': 1, 'Dad': 1, 'I': 1, 'Want': 1, 'To': 1, 'Hear': 1, 'Your': 1, 'Story': 1, 'Women': 1, 'A': 1, 'Court': 1, 'of': 1, 'Thorns': 1, 'and': 1, 'Roses': 1, 'Camino': 1, 'Ghost': 1, 'Reckless': 1, 'Powerless': 1, 'Trilogy': 1, 'Dog': 1, 'Man:': 1, 'Scarlet': 1, 'Shedder': 1}
+-----------------------------------------------------------------------------------------------------------------------
 
 
-Q2. Create a dictionary using the above book titles that combine the for loop and the get method to count the occurrences of each word in a string.
+#Q2. Create a dictionary using the above book titles that combine the for loop and the get method to count the occurrences of each word in a string.
+
 #Using get() method:
 book_titles = ['The', 'Housemaid', 'Is', 'Watching', 'Eruption', 'Swan', 'Song', 'Dad', 'I', 'Want', 'To', 'Hear', 'Your', 'Story', 'The', 'Women', 'The', 'Housemaid', 'A', 'Court', 'of', 'Thorns', 'and', 'Roses', 'Camino', 'Ghost', 'Reckless', 'The', 'Powerless', 'Trilogy', 'Dog', 'Man:', 'The', 'Scarlet', 'Shedder']
 word_counter = {}
@@ -35,8 +38,10 @@ for word in book_titles: #iterate over each book title in the book_titles list
 print(word_counter)
 
 {'The': 5, 'Housemaid': 2, 'Is': 1, 'Watching': 1, 'Eruption': 1, 'Swan': 1, 'Song': 1, 'Dad': 1, 'I': 1, 'Want': 1, 'To': 1, 'Hear': 1, 'Your': 1, 'Story': 1, 'Women': 1, 'A': 1, 'Court': 1, 'of': 1, 'Thorns': 1, 'and': 1, 'Roses': 1, 'Camino': 1, 'Ghost': 1, 'Reckless': 1, 'Powerless': 1, 'Trilogy': 1, 'Dog': 1, 'Man:': 1, 'Scarlet': 1, 'Shedder': 1}
+-----------------------------------------------------------------------------------------------------------------------
 
 
+'''
 Q3. Create an iteration through a dictionary to access the keys and values from the below cast list. 
 Given a dictionary that uses actors' names as keys and their characters as values, print each actor's name along with their corresponding character.
 
@@ -51,6 +56,7 @@ Florence Pugh as Princess Irulan
 Dave Bautista as Beast Rabban
 Christopher Walken as Emperor
 Lea Seydoux as Lady Margot Fenring
+'''
 
 cast = {
         "Timothee Chalamet": "Paul Atreides",
@@ -95,9 +101,11 @@ Actor: Florence Pugh Role: Princess Irulan
 Actor: Dave Bautista Role: Beast Rabban
 Actor: Christopher Walken Role: Emperor
 Actor: Lea Seydoux Role: Lady Margot Fenring
+-----------------------------------------------------------------------------------------------------------------------
 
 
-Q4. Working with a dictionary and a list to count the number of fruits in a trolley with the given data as below.
+#Q4. Working with a dictionary and a list to count the number of fruits in a trolley with the given data below.
+
 result = 0 #This variable will store the running total of fruit count
 trolley_items = {'eggs': 12, 'bananas': 6, 'cheese': 1, 'broccoli': 2, 'apples': 5, 'strawberries': 1, 'bread': 1, 'potatoes': 8, 'watermelon': 1, 'cookies': 5, 'juice': 2, 'orange': 10} #List of items and the quantity
 fruits = ['apples', 'bananas', 'grapes', 'orange', 'pears', 'peaches', 'strawberries', 'watermelon'] #List containing the names of various fruits
@@ -108,8 +116,11 @@ for fruit, count in trolley_items.items(): #Iterates over each key-value pair in
 print(result)
 
 23
+-----------------------------------------------------------------------------------------------------------------------
 
-Q5. Apply Q4 solutions to work on the following dictionary to make sure it works.
+
+#Q5. Apply Q4 solutions to work on the following dictionary to make sure it works.
+
 result = 0
 trolley_items = {'peaches': 5, 'bananas': 10, 'tuna': 4, 'bell pepper': 4, 'pears': 5, 'strawberries': 1, 'bread': 1, 'potatoes': 8, 'grapes': 1, 'cookies': 5, 'juice': 2, 'orange': 10}
 fruits = ['apples', 'bananas', 'grapes', 'orange', 'pears', 'peaches', 'strawberries', 'watermelon']
@@ -119,9 +130,10 @@ for fruit, count in trolley_items.items(): #Iterates over each key-value pair in
 print(result)
 
 32
+-----------------------------------------------------------------------------------------------------------------------
 
 
-Q6 Use the for loops method to track the number of fruits and other items in the trolley for Q4 and Q5.
+#Q6 Use the for loops method to track the number of fruits and other items in the trolley for Q4 and Q5.
 
 fruit_count, not_fruit_count = 0, 0 #This variable will store the running total of fruit_count and not_fruit_count to default 0
 trolley_items = {'eggs': 12, 'bananas': 6, 'cheese': 1, 'broccoli': 2, 'apples': 5, 'strawberries': 1, 'bread': 1, 'potatoes': 8, 'watermelon': 1, 'cookies': 5, 'juice': 2, 'orange': 10}
