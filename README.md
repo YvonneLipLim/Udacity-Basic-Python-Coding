@@ -1,5 +1,6 @@
-# YLL-Udacity-Basic-Python-Coding
+<h1>Basic Python Programming Practice</h1>
 Udacity Introduction To Python Programming
+<br><br>
 
 <h3>A Beginner's Guide to Basic Python</h3>
 <p>Tired of flipping through countless cheat sheets? This comprehensive Basic Python Mindmap Cheat Sheet is designed to make it quick and easy to find the right SQL commands in 5 major categories depending on their functionality:
@@ -19,6 +20,9 @@ In this repository, it includes quizzes to improve coding skills.
 </p>
 <br>
 
-## Key Learning Objectives:
-1. Understand the fundamental syntax and functions of Python
-2. Learn how to use different tools for writing and running Python code. 
+<h3>Key Learning Objectives:</h3>
+<ol>
+<li>Understand the fundamental syntax and functions of Python</li>
+<li>Learn how to use different tools for writing and running Python code.</li>
+</ol>
+<br>
