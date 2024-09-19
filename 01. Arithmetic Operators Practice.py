@@ -6,6 +6,7 @@ Avg = round((Jan + Feb + Mar) / 3) #Round a floating-point value
 print('My average monthly electricity bill is $' + str(Avg) + '.') #Convert Avg from floating-point to string
 
 My average monthly electricity bill is $48.
+-----------------------------------------------------------------------------------------------------------------
 
 #Q2. A tiler needs to tile two rectangular areas of a floor. One area is 9 tiles wide by 7 tiles long, and the other is 5 tiles wide by 7 tiles long. Tiles are sold in packages of 6.
 # Part 1: Calculate the total number of tiles needed for both areas.
