@@ -154,25 +154,34 @@ News Ticker: Local Bear Eaten by Man Legislature Announces New Laws Peasant Disc
 
 '''
 Q3.
-
+Check if the numbers provided in the list are prime numbers.
+If the numbers are prime, the code should print "[number] is a prime number."
+If the number is NOT a prime number, it should print "[number] is not a prime number", and a factor of that number, other than 1 and the number itself: "[factor] is a factor of [number]".
+Example output:
+7 IS a prime number
+26 is NOT a prime number, because 2 is a factor of 26
 '''
 
-check_prime = [20, 21, 26, 33, 48, 64, 65, 72, 78, 82]
-for num in check_prime:
-    for i in range(2, num):
-        if (num % i) == 0:
-            print("{} is NOT a prime number, because {} is a factor of {}".format(num, i, num))
+check_prime = [2, 3, 5, 13, 20, 21, 26, 33, 48, 61, 65, 71, 78, 82, 95]
+for num in check_prime: #Iterates over each number, num, in the check_prime list
+    for i in range(2, num): #Iterates over all integers from 2 up to (but not including) the current number num and checks if any number i within this range divides num evenly.
+        if (num % i) == 0: #If num is divisible by i and the remainder of num divided by i is 0, then num is not a prime number
+            print("{} is NOT a prime number, because {} is a factor of {}".format(num, i, num)) #Inner loop is immediately terminated using the break statement
             break
-        if i == num -1:
+        if i == num -1: #If the inner loop completes without finding a divisor of num, it means num is only divisible by 1 and itself, making it a prime number
             print("{} IS a prime number".format(num))
 
+3 IS a prime number
+5 IS a prime number
+13 IS a prime number
 20 is NOT a prime number, because 2 is a factor of 20
 21 is NOT a prime number, because 3 is a factor of 21
 26 is NOT a prime number, because 2 is a factor of 26
 33 is NOT a prime number, because 3 is a factor of 33
 48 is NOT a prime number, because 2 is a factor of 48
-64 is NOT a prime number, because 2 is a factor of 64
+61 IS a prime number
 65 is NOT a prime number, because 5 is a factor of 65
-72 is NOT a prime number, because 2 is a factor of 72
+71 IS a prime number
 78 is NOT a prime number, because 2 is a factor of 78
 82 is NOT a prime number, because 2 is a factor of 82
+95 is NOT a prime number, because 5 is a factor of 95
