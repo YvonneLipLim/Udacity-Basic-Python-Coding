@@ -149,3 +149,30 @@ for headline in headlines: #Iterates through each headline in the headlines list
 print("News Ticker:", news_ticker)
 
 News Ticker: Local Bear Eaten by Man Legislature Announces New Laws Peasant Discovers Violence Inherent in System Cat Rescues Fireman Stuck in Tree Brave
+------------------------------------------------------------------------------------------------------------
+
+
+'''
+Q3.
+
+'''
+
+check_prime = [20, 21, 26, 33, 48, 64, 65, 72, 78, 82]
+for num in check_prime:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print("{} is NOT a prime number, because {} is a factor of {}".format(num, i, num))
+            break
+        if i == num -1:
+            print("{} IS a prime number".format(num))
+
+20 is NOT a prime number, because 2 is a factor of 20
+21 is NOT a prime number, because 3 is a factor of 21
+26 is NOT a prime number, because 2 is a factor of 26
+33 is NOT a prime number, because 3 is a factor of 33
+48 is NOT a prime number, because 2 is a factor of 48
+64 is NOT a prime number, because 2 is a factor of 64
+65 is NOT a prime number, because 5 is a factor of 65
+72 is NOT a prime number, because 2 is a factor of 72
+78 is NOT a prime number, because 2 is a factor of 78
+82 is NOT a prime number, because 2 is a factor of 82
