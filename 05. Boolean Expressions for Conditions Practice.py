@@ -1,3 +1,44 @@
+"""
+Boolean expressions are used to evaluate conditions, returning either True or False .
+Basic Boolean Operations:
+1. AND ( and ) : Returns True if both conditions are True .
+2. OR ( or ) : Returns True if at least one condition is True .
+3. NOT ( not ) : Returns the opposite of the condition.
+
+The basic syntax will be:
+# AND
+condition1 and condition2
+
+# OR
+condition1 or condition2
+
+# NOT
+not condition
+
+An example will be:
+x = 5
+y = 10
+
+# AND
+print(x > 0 and y > 5)  # True
+
+# OR
+print(x > 0 or y < 5)  # True
+
+# NOT
+print(not x > 0)  # False
+
+Key Points to Note:
+1. Understand operator precedence.
+2. Evaluate conditions from left to right.
+3. Boolean expressions are evaluated lazily.
+4. Understand truthy and falsy values in Python.
+5. Ensure variable types are compatible.
+6. Use parentheses for clarity.
+7. Avoid complex boolean expressions.
+"""
+
+
 '''
 Q1. 
 Create two if statements that determine a winner's prize based on their total points. The points are stored in the integer variable points. 
@@ -31,5 +72,6 @@ else:
     result = "Oh dear, no prize this time."
 print(result)
 
+#Output: 
 Congratulations! You won a Protein Bar!
 
