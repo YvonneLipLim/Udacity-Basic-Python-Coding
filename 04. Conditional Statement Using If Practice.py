@@ -1,3 +1,33 @@
+"""
+The if function, also known as a conditional statement, is used to execute different blocks of code based on conditions or decisions.
+The basic syntax will be:
+if condition:
+    # code to execute if condition is true
+elif another_condition:
+    # code to execute if another_condition is true
+else:
+    # code to execute if all conditions are false
+
+An example will be:
+x = 5
+if x > 10:
+    print("x is greater than 10")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+# Output: x is equal to 5
+
+Key Points to Note:
+1. Evaluate conditions from top to bottom.
+2. Use consistent indentation.
+3. Use correct syntax for conditions.
+4. Ensure correct variable scope.
+5. Avoid excessive nesting.
+6. Use parentheses for clarity.
+7. Avoid complex if statements.
+"""
+
 '''
 Q1. 
 Create an if-elif-else statement that determines a winner's prize based on their total points. The points are stored in the integer variable points. 
@@ -19,6 +49,7 @@ else:
   result = "Congratulations! You won a Box of Chocolate!"
 print(result)
 
+#Output:
 Congratulations! You won a Protein Bar!
 -----------------------------------------------------------------------------------------------------------------
 
@@ -42,10 +73,12 @@ else:
 
 print(result)
 
+#Output:
 Guess the number:  35
 Guess the number:  30
 Nice!  Your guess matched the answer!
 -----------------------------------------------------------------------------------------------------------------
+
 
 '''
 Q3. How much will a person need to pay in total, including state and local sales tax, for a purchase made in the following respective States where an individual is from?
@@ -86,5 +119,6 @@ elif state == 'WA':
     result = "Since you're from {}, your total cost is {}.".format(state, total_cost)
 print(result)
 
+#Output:
 Since you're from WA, your total cost is 109.4.
 
