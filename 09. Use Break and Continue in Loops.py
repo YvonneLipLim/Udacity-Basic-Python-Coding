@@ -1,3 +1,38 @@
+"""
+break and continue are two essential statements in Python used to control the flow of loops.
+break terminates the loop entirely, exiting the loop body. An example will be:
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+    
+# Output: 0, 1, 2
+
+Use Cases for break:
+1. Exit the loop when a condition is met.
+2. Break out of the loop on error occurrence.
+
+continue skips the current iteration and moves to the next one. An example will be:
+for i in range(5):
+    if i == 3:
+        continue
+    print(I)
+
+# Output: 0, 1, 2, 4
+
+Use Cases for continue:
+1. Skip specific iterations based on conditions.
+2. Continue to the next iteration when data doesn't meet the criteria.
+
+Key Points to Note:
+1. Loop Types: break and continue work with for and while loops.
+2. Nesting: break and continue affect only the innermost loop.
+3. Conditional Statements: Use if statements to control break and continue.
+4. Loop Variables: Be aware of loop variable values after break or continue.
+5. Use return to exit functions.
+"""
+
+
 '''
 Q1.
 Find two methods to solve the cargo loading program:
@@ -24,6 +59,7 @@ for cargo_name, cargo_weight in all_cargo: #Iterates over each item in the all_c
 print("\nFinal Weight: {}".format(weight)) #Prints the final weight of the container
 print("Final Items: {}".format(items)) #Prints the list of items that were loaded into the container
 
+#Output:
 METHOD 1
 current weight: 0
   adding sofa (6)
@@ -44,7 +80,7 @@ current weight: 226
 
 Final Weight: 226
 Final Items: ['sofa', 'bananas', 'chair', 'mattresses', 'dog kennels', 'table', 'machine']
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Method 2
 all_cargo = [("sofa", 6), ("bananas", 10), ("chair", 20), ("mattresses", 24), ("dog kennels", 42), ("table", 4),("machine", 120), ("cheeses", 5), ("refrigerator", 8)]
@@ -68,6 +104,7 @@ for cargo_name, cargo_weight in all_cargo: #Iterates over each item in the all_c
 print("\nFinal Weight: {}".format(weight)) #Prints the final weight of the container
 print("Final Items: {}".format(items)) #Prints the list of items that were loaded into the container
 
+#Output:
 METHOD 2
 current weight: 0
   adding sofa (6)
@@ -90,7 +127,8 @@ current weight: 111
 
 Final Weight: 119
 Final Items: ['sofa', 'bananas', 'chair', 'mattresses', 'dog kennels', 'table', 'cheeses', 'refrigerator']
--------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 '''
 Q2.
@@ -124,8 +162,9 @@ for headline in headlines: #Variable to keep track of the current length of the 
 
 print(news_ticker)
 
+#Output:
 Local Bear Eaten by Man Legislature Announces New Laws Peasant Discovers Violence Inherent in System Cat Rescues Fireman Stuck in Tree Brave
-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Method 2 Using If-else Statement
 headlines = ["Local Bear Eaten by Man",
@@ -148,8 +187,9 @@ for headline in headlines: #Iterates through each headline in the headlines list
 
 print("News Ticker:", news_ticker)
 
+#Output:
 News Ticker: Local Bear Eaten by Man Legislature Announces New Laws Peasant Discovers Violence Inherent in System Cat Rescues Fireman Stuck in Tree Brave
-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 '''
@@ -171,6 +211,7 @@ for num in check_prime: #Iterates over each number, num, in the check_prime list
         if i == num -1: #If the inner loop completes without finding a divisor of num, it means num is only divisible by 1 and itself, making it a prime number
             print("{} IS a prime number".format(num))
 
+#Output:
 3 IS a prime number
 5 IS a prime number
 13 IS a prime number
