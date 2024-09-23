@@ -1,3 +1,24 @@
+"""
+Dictionaries (dicts) are mutable data structures that store mappings of unique keys to values. Key points:
+1. Ensure keys are unique.
+2. Keys can be immutable types (e.g., strings, integers).
+3. Values can be any data type.
+4. Be mindful of dictionary size.
+5. Use dictionaries for fast lookups.
+
+The basic syntax will be:
+dict = {key1: value1, key2: value2, ...}
+
+An example will be:
+person = {"name": "John", "age": 30, "city": "New York"}
+
+Use Cases:
+1. Store and manipulate data.
+2. Store configuration settings.
+3. Cache frequently accessed data.
+"""
+
+
 '''
 Q1. Create a dictionary using the below book titles that count the occurrences of each word in a string using for loops. 
 The Housemaid Is Watching
@@ -23,6 +44,7 @@ for word in book_titles: #iterate over each book title in the book_titles list
         word_counter[word] +=1 #If the word is found in the word_counter dictionary, it means it has been encountered before. The value associated with that word (which represents its count) is incremented by 1 to reflect the additional occurrence.
 print(word_counter)
 
+#Output:
 {'The': 5, 'Housemaid': 2, 'Is': 1, 'Watching': 1, 'Eruption': 1, 'Swan': 1, 'Song': 1, 'Dad': 1, 'I': 1, 'Want': 1, 'To': 1, 'Hear': 1, 'Your': 1, 'Story': 1, 'Women': 1, 'A': 1, 'Court': 1, 'of': 1, 'Thorns': 1, 'and': 1, 'Roses': 1, 'Camino': 1, 'Ghost': 1, 'Reckless': 1, 'Powerless': 1, 'Trilogy': 1, 'Dog': 1, 'Man:': 1, 'Scarlet': 1, 'Shedder': 1}
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -37,6 +59,7 @@ for word in book_titles: #iterate over each book title in the book_titles list
   word_counter[word] = word_counter.get(word, 0)+1
 print(word_counter)
 
+#Output:
 {'The': 5, 'Housemaid': 2, 'Is': 1, 'Watching': 1, 'Eruption': 1, 'Swan': 1, 'Song': 1, 'Dad': 1, 'I': 1, 'Want': 1, 'To': 1, 'Hear': 1, 'Your': 1, 'Story': 1, 'Women': 1, 'A': 1, 'Court': 1, 'of': 1, 'Thorns': 1, 'and': 1, 'Roses': 1, 'Camino': 1, 'Ghost': 1, 'Reckless': 1, 'Powerless': 1, 'Trilogy': 1, 'Dog': 1, 'Man:': 1, 'Scarlet': 1, 'Shedder': 1}
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -78,6 +101,7 @@ print("\nIterating through keys and values:")
 for key, value in cast.items(): #Uses the items() method to iterate over the keys and values of the cast dictionary which returns tuples of key-value pairs that represent the actor's name, and the character they play.
     print("Actor: {} Role: {}".format(key,value)) #Display the actor's name and their character in a readable format.
 
+#Output:
 Iterating through keys
 Timothee Chalamet
 Zendaya
@@ -115,6 +139,7 @@ for fruit, count in trolley_items.items(): #Iterates over each key-value pair in
         result += count #If the item is a fruit, its count (quantity) is added to the result variable, incrementing the running total of fruits
 print(result)
 
+#Output:
 23
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -129,6 +154,7 @@ for fruit, count in trolley_items.items(): #Iterates over each key-value pair in
         result += count
 print(result)
 
+#Output:
 32
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -156,5 +182,6 @@ for fruit, count in trolley_items.items(): #Iterates over each key-value pair in
         not_fruit_count += count #The variable is incremented by count, adding the quantity of the non-fruit item to the total.
 print(fruit_count,not_fruit_count)
 
+#Output:
 23 31
 32 24
