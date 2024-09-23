@@ -1,3 +1,27 @@
+"""
+Conditional statements are used to control the flow of a program based on conditions or decisions. 
+While loops are used to repeat a block of code as long as a condition is true.
+
+Basic syntax will be:
+while condition:
+    # code to execute
+
+An example will be:
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+# Output: 0, 1, 2, 3, 4
+
+Key Points to Note:
+1. Loop Termination: Ensure loop termination conditions are met.
+2. Infinite Loops: Avoid infinite loops by using a terminating condition.
+3. Loop Variables: Update loop variables correctly.
+4. Conditional Statement Placement: Place conditional statements logically.
+5. Nesting: Avoid excessive nesting.
+"""
+
 #Q1. Find the factorial of a number using a while loop.
 
 number = 7 #Stores the number for which we want to calculate the factorial.
@@ -9,6 +33,7 @@ while number >= 1: #The loop continues as long as the number is greater than or 
     number -= 1 #Decrements number by 1 to move on to the next number in the factorial calculation
 print(product)
 
+#Output:
 5040
 -----------------------------------------------------------------------------------------------------------------
 
@@ -21,6 +46,7 @@ for i in range(number, 0, -1): #This loop iterates from number down to 1, decrem
     product *= i #Multiplies the current value of the product by i and stores the result back in product.
 print(product)
 
+#Output:
 5040
 -----------------------------------------------------------------------------------------------------------------
 
@@ -39,6 +65,7 @@ while break_num < end_num: #The loop continues as long as break_num is less than
     break_num += count_by #Increments break_num by count_by which mean the value of break_num increases by the specified amount in each step
 print(break_num)
 
+#Output:
 104
 -----------------------------------------------------------------------------------------------------------------
 
@@ -62,6 +89,7 @@ else: #If the condition is false, it means the starting number is valid, and the
     result = break_num
 print(result)
 
+#Output:
 104
 
 #Testing the start_num logic
@@ -82,6 +110,7 @@ else:
     result = break_num
 print(result)
 
+#Output:
 Oops! Looks like your start value is greater than the end value. Please try again.
 -----------------------------------------------------------------------------------------------------------------
 
@@ -97,6 +126,7 @@ while (num * num) < limit: #The loop continues as long as the square of num is l
     num += 1 #Increments num by 1 to move on to the next number
 print(nearest_square)
 
+#Output:
 16
 -----------------------------------------------------------------------------------------------------------------
 
@@ -124,12 +154,8 @@ while (count_odd < 8) and (i < len_num_list): #Loop continues as long as these c
 print ("The numbers of odd numbers added are: {}".format(count_odd))
 print ("The sum of the odd numbers added is: {}".format(list_sum))
 
+#Output:
 The numbers of odd numbers added are: 8
 The sum of the odd numbers added is: 1242
-
-# We would write a while loop to write this code for the following reasons:
-# We don't need a break statement that a for loop will require. Without a break statement, a for loop will iterate through the whole list, which is not efficient.
-# We don't want to iterate over the entire list, but only over the required number of elements in the list that meet our condition.
-# It is easier to understand because you explicitly control the exit conditions for the loop.
 -----------------------------------------------------------------------------------------------------------------
 
