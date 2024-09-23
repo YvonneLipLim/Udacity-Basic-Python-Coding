@@ -1,3 +1,21 @@
+"""
+Conditional statements are used to control the flow of a program based on conditions or decisions. For loops are used to iterate over sequences.
+The basic syntax will be:
+for variable in iterable:
+    if condition:
+        # code to execute
+
+An example will be:
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        print(f"{fruit} is my favorite!")
+    else:
+        print(f"{fruit} is a good fruit.")
+
+"""
+
+
 '''
 Q1.
 Create usernames from a given list of names. The usernames should be lowercase versions of the names with all spaces replaced by underscores. Add the email domain of @abc.com to the usernames too.
@@ -22,6 +40,7 @@ for name in names: #iterates over each name in the names list
     usernames.append(email) #adds the email domain to the usernames
 print(usernames)
 
+#Output:
 ['katharine_hepburn@abc.com', 'meryl_streep@abc.com', 'jack_nicholson@abc.com', 'ingrid_bergman@abc.com', 'daniel_day-lewis@abc.com', 'frances_mcdormand@abc.com', 'walter_brennan@abc.com', 'bette_davis@abc.com', 'spencer_tracy@abc.com', 'marlon_brando@abc.com']
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -36,6 +55,7 @@ for names in range(len(usernames)): #This loop structure allows access to both t
     usernames[names] = usernames[names].lower().replace(" ", "_") #converts the name to lowercase aqnd replaces all spaces in the name with underscores
 print(usernames)
 
+#Output:
 ['joey_tribbiani', 'monica_geller', 'chandler_bing', 'phoebe_buffay']
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -50,6 +70,7 @@ for token in tokens: #iterates over each string in the tokens list
         count += 1 #If string is identified as XML tag, count is incremented
 print(count)
 
+#Output:
 4
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -72,6 +93,7 @@ for item in items: #iterates over each string in the items list
 html_str += "</ul>" #Adding closing tag </ul>
 print(html_str)
 
+#Output:
 <ul>
 <li>Hello World</li>
 <li>Welcome 2024</li>
