@@ -13,6 +13,13 @@ for fruit in fruits:
     else:
         print(f"{fruit} is a good fruit.")
 
+Key Points to Note:
+1. Loop Termination: Ensure loop termination conditions are met.
+2. Loop Variables: Update loop variables correctly.
+3. Conditional Statement Placement: Place conditional statements logically.
+4. Nesting: Avoid excessive nesting.
+5. Iterable Size: Be mindful of iterable size.
+6. Use list comprehensions for concise iteration.
 """
 
 
