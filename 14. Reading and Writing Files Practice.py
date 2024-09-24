@@ -30,7 +30,7 @@ Key Points to Note:
 3. Check if the file exists.
 4. Ensure necessary file permissions.
 5. Specify encoding for text files.
-6. Use with statement that automatically closes the file.
+6. Use the with statement that automatically closes the file.
    with open("example.txt", "r") as file:
    content = file.read()
 7. Catch and handle file-related exceptions.
