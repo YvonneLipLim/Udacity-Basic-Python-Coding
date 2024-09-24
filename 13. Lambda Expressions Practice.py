@@ -1,5 +1,5 @@
 '''
-Lambda expressions, also known as lambda functions or anonymous functions, a concise way to create functions without declaring them with the def keyword:
+Lambda expressions, also known as lambda functions or anonymous functions, are a concise way to create functions without declaring them with the def keyword:
 1. Not declared with a name
 2. Contain only a single expression
 3. Cannot include statements (e.g., if, for, while) or multiple expressions
@@ -12,7 +12,7 @@ print(sum(3, 4))  # Outputs: 7
 Use cases:
 1. Often used as event handlers or callback functions
 2. Can be used with functions like filter(), map(), and reduce() to process data
-3. Can be used as key function for sorting.
+3. Can be used as a key function for sorting.
 
 Advantages:
 1. Reduce code length
@@ -21,8 +21,8 @@ Advantages:
 '''
 
 
-#Q1. Below code uses map() to find mean of each list in numbers to create the list averages. 
-#    Rewrite the code to be more concise by replacing mean function with lambda expression defined with the call to map().
+#Q1. The below code uses map() to find the mean of each list in numbers to create the list averages. 
+#    Rewrite the code to be more concise by replacing the mean function with lambda expression defined with the call to map().
 
 numbers = [
               [34, 63, 88, 71, 29],
