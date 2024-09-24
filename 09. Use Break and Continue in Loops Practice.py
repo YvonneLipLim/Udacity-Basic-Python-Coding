@@ -4,9 +4,7 @@ break terminates the loop entirely, exiting the loop body. An example will be:
 for i in range(5):
     if i == 3:
         break
-    print(i)
-    
-# Output: 0, 1, 2
+    print(I) #Output: 0, 1, 2
 
 Use Cases for break:
 1. Exit the loop when a condition is met.
@@ -16,9 +14,7 @@ continue skips the current iteration and moves to the next one. An example will 
 for i in range(5):
     if i == 3:
         continue
-    print(I)
-
-# Output: 0, 1, 2, 4
+    print(I) #Output: 0, 1, 2, 4
 
 Use Cases for continue:
 1. Skip specific iterations based on conditions.
