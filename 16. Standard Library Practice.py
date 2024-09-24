@@ -56,7 +56,7 @@ print("e to the power of 3 is: ", result) #Output: 20.085536923187668
 
 
 #Q2. Create a function called generate_password that selects three random words from the list of words word_list and concatenates them into a single string. 
-#The function should not accept any arguments and should reference the global variable word_list to build the password.
+#The function should not accept arguments and should reference the global variable word_list to build the password.
 
 import random
 word_file = "words.txt"
