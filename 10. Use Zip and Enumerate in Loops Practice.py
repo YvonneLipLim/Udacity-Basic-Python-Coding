@@ -11,9 +11,7 @@ An example will be:
 list1 = [1, 2, 3]
 list2 = ['a', 'b', 'c']
 zipped = zip(list1, list2)
-print(list(zipped))  
-
-# Output: [(1, 'a'), (2, 'b'), (3, 'c')]
+print(list(zipped)) # Output: [(1, 'a'), (2, 'b'), (3, 'c')]
 
 Use Cases for zip:
 1. Combine related data from multiple lists.
